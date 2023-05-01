@@ -10,7 +10,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <title>CRUD</title>
+    <title>Student Registration</title>
   </head>
   <body>
     <div class="container">
@@ -19,40 +19,37 @@
           <label class="form-label">Student Number:</label>
           <input type="text" class="form-control" id="Rollbox" />
         </div>
+
         <div class="mb-3">
           <label class="form-label">First Name:</label>
           <input type="text" class="form-control" id="FNamebox" />
         </div>
+
         <div class="mb-3">
           <label class="form-label">Middle Name:</label>
           <input type="text" class="form-control" id="MNamebox" />
         </div>
+
         <div class="mb-3">
           <label class="form-label">Last Name:</label>
           <input type="text" class="form-control" id="LNamebox" />
         </div>
+
         <div class="mb-3">
           <label class="form-label">Email Address:</label>
-          <input
-            type="email"
-            class="form-control"
-            id="EmailAddressbox"
-            aria-describedby="emailHelp"
-          />
+          <input type="email" class="form-control" id="EmailAddressbox" />
         </div>
+
         <div class="mb-3">
           <label class="form-label">Address:</label>
-          <input
-            type="email"
-            class="form-control"
-            id="Addressbox"
-            aria-describedby="emailHelp"
-          />
+          <input type="email" class="form-control" id="Addressbox" />
         </div>
+
         <div class="mb-3">
           <label class="form-label">Mobile Number/Tel No:</label>
           <input type="email" class="form-control" id="MobileNumberbox" />
         </div>
+
         <div class="mb-3">
           <label class="form-label">Password:</label>
           <input type="password" class="form-control" id="Passwordbox" />
@@ -155,13 +152,6 @@
           });
       }
 
-      //Assign Event Button
-
-      insBtn.addEventListener("click", InsertData);
-      selBtn.addEventListener("click", SelectData);
-      updBtn.addEventListener("click", UpdateData);
-      delBtn.addEventListener("click", DeleteData);
-
       //Select data function//
 
       function SelectData() {
@@ -221,6 +211,13 @@
             alert("unseccesful, error" + error);
           });
       }
+
+      //Assign Event Button
+
+      insBtn.addEventListener("click", InsertData);
+      selBtn.addEventListener("click", SelectData);
+      updBtn.addEventListener("click", UpdateData);
+      delBtn.addEventListener("click", DeleteData);
     </script>
   </body>
 </html>
